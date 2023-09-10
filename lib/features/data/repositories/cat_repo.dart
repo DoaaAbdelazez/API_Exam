@@ -1,0 +1,4 @@
+class CatRepository{
+  static getCats() {}
+
+}
