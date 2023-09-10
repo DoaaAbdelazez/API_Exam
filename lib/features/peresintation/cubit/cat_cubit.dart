@@ -10,7 +10,7 @@ class CatCubit extends Cubit<CatState> {
 
   void getCats() async {
     emit(GetCatLoadingState());
-    final response = await CatRepository.getCats();
+    final response = await catRepository.getCats();
 
     response.fold(
       (l) => emit(GetCatErrorState()),
